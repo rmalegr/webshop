@@ -6,7 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from "@angular/core";
   styles: [], //
 })
 export class ProductsHeaderComponent implements OnInit {
-  @Output() columnsCountChange = new EventEmitter<number>(); //Utilizamos el Output para emitir un evento cuando se haga click en el botón de ordenar Ej: @Output() sortUpdated = new EventEmitter<string>();
+  @Output() columnsCountChange = new EventEmitter<number>();
+  //Utilizamos el Output para emitir un evento cuando se haga click en el botón de ordenar Ej: @Output() sortUpdated = new EventEmitter<string>();
   sort = "desc";
   itemsShowCount = 12;
 
@@ -26,4 +27,6 @@ export class ProductsHeaderComponent implements OnInit {
     //Emitimos el evento con el nÚmero de columnas seleccionadas. El componente padre recibirá el evento y se encargará de realizar la ordenación.
     this.columnsCountChange.emit(colsNum);
   }
+
+  //comando git para desconectar github y borrar el repositorio: git push --delete origin master
 }

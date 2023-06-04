@@ -23,9 +23,12 @@ import { AppComponent } from "./app.component";
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductsHeaderComponent } from './components/products-header/products-header.component';
+import { FiltersComponent } from './components/filters/filters.component';
+import { ProductBoxComponent } from './components/product-box/product-box.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, ProductsHeaderComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, ProductsHeaderComponent, FiltersComponent, ProductBoxComponent, CartComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
